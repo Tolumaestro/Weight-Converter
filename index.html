@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Weight Converter</title>
+
+    <style>
+        body{
+            margin-top: 70px;
+            background: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <h1 class="display-4 text-center mb-3">Weight Converter</h1>
+
+                <form action="">
+                    <div class="form-group">
+                        <select name="" id="selectWeight" class="custom-select" onchange="selectquantity()">
+                            <option value="Pounds">Pounds</option>
+                            <option value="Kilograms">Kilograms</option>
+                            <option value="Grams">Grams</option>
+                            <option value="Ounces">Ounces</option>
+                        </select>
+                        <input type="number" name="" class="form-control form-control-lg" id="input" placeholder="Enter Pounds">
+                    </div>
+                </form>
+
+                <div id="output">
+                    <div class="card bg-primary mb-2">
+                        <div class="card-body">
+                            <h4 class="quantity"></h4>
+                            <div id="output1"></div>
+                        </div>
+                    </div>
+                    <div class="card bg-success mb-2">
+                        <div class="card-body">
+                            <h4 class="quantity"></h4>
+                            <div id="output2"></div>
+                        </div>
+                    </div>
+                    <div class="card bg-danger mb-2">
+                        <div class="card-body">
+                            <h4 class="quantity"></h4>
+                            <div id="output3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
